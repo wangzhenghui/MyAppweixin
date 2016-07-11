@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal">
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/login_reback_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:onClick="login_back"
+            android:background="@drawable/title_btn_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="注册陪我"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/nicheng"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:paddingLeft="16dp"
+            android:id="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+        <EditText
+            android:id="@+id/king1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="例如：VeiLen"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/guojia"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国家/地区"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:paddingLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView2" />
+        <EditText
+            android:id="@+id/king2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="中国"
+            android:textColor="#41a344"
+            android:padding="10dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dianhua"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:paddingLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView3" />
+        <EditText
+            android:id="@+id/king3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="你的手机号码"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mima"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:paddingLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView4" />
+        <EditText
+            android:id="@+id/king4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="填写密码"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/main_zhuce_btn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style_green"
+        android:gravity="center"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:layout_marginTop="20dp"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:onClick="welcome_zhuce" />
+</LinearLayout>

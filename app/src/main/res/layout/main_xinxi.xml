@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/title"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"  >
+        <Button
+            android:id="@+id/login_reback_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:onClick="btn_back"
+            android:background="@drawable/title_btn_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/mm_listitem"
+            android:onClick="btn_gerenxinxi">
+            <ImageView
+                android:id="@+id/king"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/xiaohei"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/mm"
+                android:layout_toStartOf="@+id/mm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头像"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:paddingLeft="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:id="@+id/mm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:clickable="true"
+                android:src="@drawable/mm_submenu" />
+
+        </RelativeLayout>
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/mm_listitem">
+            <TextView
+                android:id="@+id/king1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VeiLen"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/mm1"
+                android:layout_toStartOf="@+id/mm1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:paddingLeft="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:id="@+id/mm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:clickable="true"
+                android:src="@drawable/mm_submenu" />
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/mm_listitem">
+                <TextView
+                    android:id="@+id/king2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="wang417379397"
+                    android:textColor="#000"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/mm2"
+                    android:layout_toStartOf="@+id/mm2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="陪我号"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <ImageView
+                    android:id="@+id/mm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mm_listitem">
+                <TextView
+                    android:id="@+id/king3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textColor="#000"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/mm3"
+                    android:layout_toStartOf="@+id/mm3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <ImageView
+                    android:id="@+id/mm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/mm_listitem">
+                <TextView
+                    android:id="@+id/king4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="辽宁  沈阳"
+                    android:textColor="#000"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/mm4"
+                    android:layout_toStartOf="@+id/mm4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地区"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <ImageView
+                    android:id="@+id/mm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/mm_listitem">
+                <TextView
+                    android:id="@+id/king5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="\n我来不及认真的年轻！待我明\n白过来时，我只能选择认真的\n老去！！\n"
+                    android:textColor="#000"
+                    android:padding="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/mm5"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:layout_toEndOf="@+id/textView2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个性签名"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:paddingLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView2" />
+
+
+                <ImageView
+                    android:id="@+id/mm5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/mm_submenu" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        </ScrollView>
+</LinearLayout>

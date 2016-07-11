@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+        
+        <RelativeLayout 
+  			android:layout_width="match_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >  
+  			
+            
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="陪我"
+        		android:layout_centerInParent="true"
+        		android:textSize="20dp"
+				android:textColor="#ffffff" /> 
+			<ImageButton 
+			    android:id="@+id/right_btn"
+			    android:layout_width="67dp" 
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+        		android:src="@drawable/title_btn_function"
+				android:background="@drawable/title_btn_right"
+				android:onClick="btnmainright"
+			    />      
+		</RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/search_bar_bg" >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="搜索"
+                android:singleLine="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/search_bar_icon_normal" 
+                android:background="@drawable/search_bar_edit_bg" >               
+            </EditText>
+            
+        </LinearLayout>
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbarStyle="outsideOverlay"
+		>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/mm_listitem"
+            android:clickable="true"
+            android:onClick="startchat"
+             >
+            
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="55dp"
+		        android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/xiaohei" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="小黑"
+                android:textColor="#000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="7dp"
+                android:text="昨天 晚上"
+                android:textColor="#666" />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/head"
+                android:layout_alignParentBottom="true"
+                android:padding="7dp"
+                android:text="尼滚...."
+                android:textColor="#666" />
+        </RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/mm_listitem"
+		android:clickable="true"
+		android:onClick="startchat"
+		>
+
+		<ImageView
+			android:id="@+id/head1"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="5dp"
+			android:src="@drawable/aa11" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head1"
+			android:padding="7dp"
+			android:text="小K"
+			android:textColor="#000" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="7dp"
+			android:text="昨天"
+			android:textColor="#666" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head1"
+			android:layout_alignParentBottom="true"
+			android:padding="7dp"
+			android:text="哦哦哦......"
+			android:textColor="#666" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/mm_listitem"
+		android:clickable="true"
+		android:onClick="startchat"
+		>
+
+		<ImageView
+			android:id="@+id/head2"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="5dp"
+			android:src="@drawable/aa22" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head2"
+			android:padding="7dp"
+			android:text="小三"
+			android:textColor="#000" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="7dp"
+			android:text="2016年6月19"
+			android:textColor="#666" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head2"
+			android:layout_alignParentBottom="true"
+			android:padding="7dp"
+			android:text="我来了...."
+			android:textColor="#666" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/mm_listitem"
+		android:clickable="true"
+		android:onClick="startchat"
+		>
+
+		<ImageView
+			android:id="@+id/head3"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="5dp"
+			android:src="@drawable/aa33" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head3"
+			android:padding="7dp"
+			android:text="小刘"
+			android:textColor="#000" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="7dp"
+			android:text="2016年6月20"
+			android:textColor="#666" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head3"
+			android:layout_alignParentBottom="true"
+			android:padding="7dp"
+			android:text="晚安...."
+			android:textColor="#666" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/mm_listitem"
+		android:clickable="true"
+		android:onClick="startchat"
+		>
+
+		<ImageView
+			android:id="@+id/head4"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="5dp"
+			android:src="@drawable/aa44" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head4"
+			android:padding="7dp"
+			android:text="大兵"
+			android:textColor="#000" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="7dp"
+			android:text="22:30"
+			android:textColor="#666" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head4"
+			android:layout_alignParentBottom="true"
+			android:padding="7dp"
+			android:text="明天见...."
+			android:textColor="#666" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/mm_listitem"
+		android:clickable="true"
+		android:onClick="startchat"
+		>
+
+		<ImageView
+			android:id="@+id/head5"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="5dp"
+			android:src="@drawable/aa55" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head5"
+			android:padding="7dp"
+			android:text="坏男人"
+			android:textColor="#000" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="7dp"
+			android:text="19:30"
+			android:textColor="#666" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head5"
+			android:layout_alignParentBottom="true"
+			android:padding="7dp"
+			android:text="LOL啊...."
+			android:textColor="#666" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/mm_listitem"
+		android:clickable="true"
+		android:onClick="startchat"
+		>
+
+		<ImageView
+			android:id="@+id/head6"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="5dp"
+			android:src="@drawable/aa55" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head6"
+			android:padding="7dp"
+			android:text="好先生"
+			android:textColor="#000" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="7dp"
+			android:text="19:30"
+			android:textColor="#666" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head6"
+			android:layout_alignParentBottom="true"
+			android:padding="7dp"
+			android:text="LOL啊...."
+			android:textColor="#666" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/mm_listitem"
+		android:clickable="true"
+		android:onClick="startchat"
+		>
+
+		<ImageView
+			android:id="@+id/head7"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="5dp"
+			android:src="@drawable/aa55" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head7"
+			android:padding="7dp"
+			android:text="习大大"
+			android:textColor="#000" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="7dp"
+			android:text="19:30"
+			android:textColor="#666" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/head7"
+			android:layout_alignParentBottom="true"
+			android:padding="7dp"
+			android:text="LOL啊...."
+			android:textColor="#666" />
+	</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+ </LinearLayout>

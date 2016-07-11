@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@drawable/w04" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center" 
+        android:text="摇一摇手机\n或者看看陪我附近的人\n认识更多的陪我友"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:textSize="22dp"
+        android:textColor="#fff" 
+        />
+</RelativeLayout>
